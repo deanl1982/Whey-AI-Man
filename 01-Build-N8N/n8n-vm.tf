@@ -133,10 +133,8 @@ resource "azurerm_linux_virtual_machine" "vm" {
         azurerm_network_interface.nic.id
     ]
 
-    admin_ssh_key {
-        username   = var.admin_username
-        public_key = file("~/.ssh/id_rsa.pub")
-    }
+    admin_password = "YourSecurePassword123!"
+    disable_password_authentication = false
 
     os_disk {
         caching              = "ReadWrite"
