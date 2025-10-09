@@ -4,10 +4,10 @@ This repository contains infrastructure as code (IaC) and setup scripts for depl
 
 ## Project Structure
 
-```
+```plaintext
 ├── 01-Build-N8N/
 │   ├── n8n-vm.tf       # Terraform configuration for Azure infrastructure
-│   └── setup-n8n.sh    # Shell script for installing and configuring n8n
+│   └── setup-vm.sh     # Shell script for installing and configuring n8n and dependencies
 ```
 
 ## Prerequisites
@@ -20,41 +20,56 @@ This repository contains infrastructure as code (IaC) and setup scripts for depl
 ## Infrastructure Components
 
 The project sets up the following Azure resources:
-- Resource Group
-- Virtual Network with a dedicated subnet
-- Public IP address
-- Network Security Group
-- Virtual Machine (with necessary security rules)
+
+- Resource Group (named 'rg-whey-ai-man-n8n' by default)
+- Virtual Network with a dedicated subnet (10.0.0.0/16 network space)
+- Public IP address (Dynamic allocation)
+- Network Security Group with rules for:
+  - SSH (port 22)
+  - HTTP (port 80)
+  - HTTPS (port 443)
+  - n8n (port 5678)
+- Ubuntu 18.04 LTS Virtual Machine (Standard_B2s size)
 
 ## Quick Start
 
 1. **Initialize Terraform**
+
    ```bash
    cd 01-Build-N8N
    terraform init
    ```
 
 2. **Deploy Azure Infrastructure**
+
    ```bash
    terraform plan
    terraform apply
    ```
 
 3. **Configure n8n**
-   - Connect to the VM using SSH
+   - Connect to the VM using SSH (password: YourSecurePassword123!)
    - Run the setup script:
+
      ```bash
-     ./setup-n8n.sh
+     sudo chmod +x setup-vm.sh
+     ./setup-vm.sh
      ```
+
+   After setup completes:
+   - n8n will be available at `http://your-vm-ip:5678`
+   - Nginx will be configured and running
+   - UFW firewall will be enabled with proper rules
 
 ## Architecture
 
 The setup creates a VM in Azure with:
+
 - Docker for containerization
-- n8n running in a Docker container
-- Nginx as a reverse proxy
+- n8n running in a Docker container with persistence
+- Nginx installed directly on the system (not containerized)
+- UFW (Uncomplicated Firewall) enabled with Nginx rules
 - Persistent volume for n8n data
-- Docker network for container communication
 
 ## Network Configuration
 
