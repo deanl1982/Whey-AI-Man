@@ -1,10 +1,12 @@
+# Whey-AI-Man
+
 ## n8n Lab Environment
 
 This repository contains infrastructure as code (IaC) and setup scripts for deploying n8n in an Azure environment. n8n is a workflow automation tool that allows you to connect different services and automate tasks.
 
 ## Project Structure
 
-```
+```plaintext
 ├── 01-Build-N8N/
 │   ├── n8n-vm.tf       # Terraform configuration for Azure infrastructure
 │   └── setup-n8n.sh    # Shell script for installing and configuring n8n
@@ -20,6 +22,7 @@ This repository contains infrastructure as code (IaC) and setup scripts for depl
 ## Infrastructure Components
 
 The project sets up the following Azure resources:
+
 - Resource Group
 - Virtual Network with a dedicated subnet
 - Public IP address
@@ -29,12 +32,14 @@ The project sets up the following Azure resources:
 ## Quick Start
 
 1. **Initialize Terraform**
+
    ```bash
    cd 01-Build-N8N
    terraform init
    ```
 
 2. **Deploy Azure Infrastructure**
+
    ```bash
    terraform plan
    terraform apply
@@ -43,6 +48,7 @@ The project sets up the following Azure resources:
 3. **Configure n8n**
    - Connect to the VM using SSH
    - Run the setup script:
+
      ```bash
      ./setup-n8n.sh
      ```
@@ -50,6 +56,7 @@ The project sets up the following Azure resources:
 ## Architecture
 
 The setup creates a VM in Azure with:
+
 - Docker for containerization
 - n8n running in a Docker container
 - Nginx as a reverse proxy
