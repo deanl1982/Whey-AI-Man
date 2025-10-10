@@ -9,6 +9,7 @@ sudo usermod -aG docker $USER                       # Adds current user to docke
 # Nginx setup
 sudo apt install -y nginx           # Installs nginx directly on system
 sudo systemctl start nginx         # Starts nginx service
+sudo systemctl stop nginx          # Stops nginx service
 sudo systemctl enable nginx        # Enables nginx to start on boot
 sudo systemctl status nginx        # Checks nginx status
 sudo ufw allow 'Nginx Full'        # Allows nginx through firewall
