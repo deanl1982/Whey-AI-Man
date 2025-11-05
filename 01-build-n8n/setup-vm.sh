@@ -18,5 +18,5 @@ sudo systemctl enable nginx        # Enables nginx to start on boot
 # sudo systemctl restart nginx       # Restarts nginx
 
 # Step 3 - Run n8n in Docker
-sudo docker volume create n8n_data    # Creates a Docker volume to persist n8n data
+sudo docker volume create n8n_data    # Creates a Docker volume to persist n8n data5678
 sudo docker run -d --name n8n -p 5678:5678 -v n8n_data:/home/node/.n8n -e N8N_SECURE_COOKIE=false n8nio/n8n # Runs n8n in a Docker container with data persistence
