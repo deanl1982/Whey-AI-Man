@@ -1,0 +1,114 @@
+[
+  {
+    "ApplicationName": "Miro",
+    "AppVendor": "Miro",
+    "AppVersion": "2.4.1",
+    "RequestedEntraPermissions": "Files.Read.All (application), User.Read.All (application)",
+    "DataStorageLocation": "United Kingdom"
+  },
+  {
+    "ApplicationName": "Notion",
+    "AppVendor": "Notion Labs, Inc.",
+    "AppVersion": "1.0.0",
+    "RequestedEntraPermissions": [
+      "User.Read (Delegated)"
+    ],
+    "DataStorageLocation": "UK"
+  },
+  {
+    "ApplicationName": "Tableau",
+    "AppVendor": "Salesforce",
+    "AppVersion": "2024.3",
+    "RequestedEntraPermissions": [
+      "Files.Read.All (application)"
+    ],
+    "DataStorageLocation": "US"
+  },
+  {
+    "ApplicationName": "ClickUp",
+    "AppVendor": "Mango Technologies, Inc.",
+    "AppVersion": "1.1",
+    "RequestedEntraPermissions": "User.Read.All (application); Files.Read (application)",
+    "DataStorageLocation": ""
+  },
+  {
+    "ApplicationName": "Slack",
+    "AppVendor": "Salesforce",
+    "AppVersion": "2025.1",
+    "RequestedEntraPermissions": "",
+    "DataStorageLocation": "UK"
+  },
+  {
+    "ApplicationName": "   Microsoft Forms  ",
+    "AppVendor": "Microsoft",
+    "AppVersion": "v3",
+    "RequestedEntraPermissions": "User.Read.All (APPLICATION)",
+    "DataStorageLocation": "Great Britain"
+  },
+  {
+    "ApplicationName": "Confluence",
+    "AppVendor": "Atlassian",
+    "AppVersion": "8.9",
+    "RequestedEntraPermissions": [
+      "User.Read.All (application)"
+    ],
+    "DataStorageLocation": "EU"
+  },
+  {
+    "ApplicationName": "Cal.com",
+    "AppVendor": "Cal.com, Inc.",
+    "AppVersion": "2.0",
+    "RequestedEntraPermissions": "Calendars.Read (delegated)",
+    "DataStorageLocation": "Germany"
+  },
+  {
+    "ApplicationName": "Kahoot App",
+    "AppVendor": "Kahoot!",
+    "AppVersion": "1.2",
+    "RequestedEntraPermissions": [
+      "User.Read.All (application)"
+    ],
+    "DataStorageLocation": "UK",
+    "_ExistingRecord": {
+      "Found": true,
+      "PreviousStatus": "Approved",
+      "ReviewDate": "2025-03-15",
+      "ReviewComments": "Approved for teaching use."
+    }
+  },
+  {
+    "ApplicationName": "Mural",
+    "AppVendor": "Mural",
+    "AppVersion": "3.0",
+    "RequestedEntraPermissions": "User.Read (Delegated), Files.Read.All (application)",
+    "DataStorageLocation": "UK",
+    "_ExistingRecord": {
+      "Found": true,
+      "PreviousStatus": "Rejected",
+      "ReviewDate": "2024-10-01",
+      "ReviewComments": "Delegated permissions requested."
+    }
+  },
+  {
+    "ApplicationName": "Acme Whiteboard",
+    "AppVendor": "Acme Ltd",
+    "AppVersion": "0.9-beta",
+    "RequestedEntraPermissions": "User.Read.All (application)",
+    "DataStorageLocation": "  ",
+    "_ExistingRecord": {
+      "Found": true,
+      "PreviousStatus": "Pending",
+      "ReviewDate": "2025-01-05",
+      "ReviewComments": "Awaiting DPIA."
+    }
+  },
+  {
+    "ApplicationName": "DocuSign for Word",
+    "AppVendor": "DocuSign",
+    "AppVersion": "",
+    "RequestedEntraPermissions": [
+      "Files.Read.All (application)"
+    ],
+    "DataStorageLocation": "England"
+  }
+]

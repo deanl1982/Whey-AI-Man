@@ -1,0 +1,1682 @@
+[
+  {
+    "Status": "Approved",
+    "Application": "Accessibility Reminder",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "george_white@nhs.net",
+    "ReviewDate": "30/05/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Adobe Acrobat Teams App",
+    "Vendor": "Adobe",
+    "RequesterEmail": "noah_johnson@nhs.net",
+    "ReviewDate": "20/07/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Advanced formula environment (Excel)",
+    "Vendor": "Unknown",
+    "RequesterEmail": "ava_evans@nhs.net",
+    "ReviewDate": "22/01/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "AhaSlides - Live Polls & Quizzes",
+    "Vendor": "AhaSlides",
+    "RequesterEmail": "lucas_khan71@nhs.net",
+    "ReviewDate": "25/10/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Alertive Testing SAML",
+    "Vendor": "Unknown",
+    "RequesterEmail": "mia_thompson@nhs.net",
+    "ReviewDate": "09/01/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Autocad Web App",
+    "Vendor": "Autodesk",
+    "RequesterEmail": "gracehall@nhs.net",
+    "ReviewDate": "09/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Aqua Mail",
+    "Vendor": "MobiSystems",
+    "RequesterEmail": "ava-williams@nhs.net",
+    "ReviewDate": "08/05/25",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Breaktime",
+    "Vendor": "Flow Simulation Ltd",
+    "RequesterEmail": "theo_white@nhs.net",
+    "ReviewDate": "02/03/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Business Intelligence and Risk (BI&R) NonProd",
+    "Vendor": "Unknown",
+    "RequesterEmail": "oscar-wilson@nhs.net",
+    "ReviewDate": "12/12/23",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Calendar Overlay",
+    "Vendor": "Unknown",
+    "RequesterEmail": "leo-jones@nhs.net",
+    "ReviewDate": "22/08/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "ClickUp",
+    "Vendor": "ClickUp",
+    "RequesterEmail": "sofiaahmed@nhs.net",
+    "ReviewDate": "29/06/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Compliance by Metacompliance",
+    "Vendor": "Unknown",
+    "RequesterEmail": "freya_jones@nhs.net",
+    "ReviewDate": "22/09/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Data Visualizer (Visio)",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "islaahmed@nhs.net",
+    "ReviewDate": "10/06/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Decisions - Meeting Management Solution",
+    "Vendor": "Decisions",
+    "RequesterEmail": "lily_shah@nhs.net",
+    "ReviewDate": "04/05/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Diligent Boards",
+    "Vendor": "Diligent",
+    "RequesterEmail": "isla_patel64@nhs.net",
+    "ReviewDate": "15/12/23",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "DocuSign for Word",
+    "Vendor": "DocuSign",
+    "RequesterEmail": "arjun-williams@nhs.net",
+    "ReviewDate": "25/01/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Doccla (production)",
+    "Vendor": "Doccla",
+    "RequesterEmail": "ava_green@nhs.net",
+    "ReviewDate": "18/10/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "The Events Calendar (Liquid Web brand)",
+    "Vendor": "StellarWP (Liquid Web)",
+    "RequesterEmail": "lucasthompson@nhs.net",
+    "ReviewDate": "06/01/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Approved",
+    "Application": "FreshDesk",
+    "Vendor": "Freshworks",
+    "RequesterEmail": "avapatel@nhs.net",
+    "ReviewDate": "12/01/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Forms",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "james-evans@nhs.net",
+    "ReviewDate": "08/07/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "GoBright",
+    "Vendor": "GoBright",
+    "RequesterEmail": "leobaker@nhs.net",
+    "ReviewDate": "08/09/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "GoBright - Outlook Add in",
+    "Vendor": "GoBright",
+    "RequesterEmail": "ivy_moore@nhs.net",
+    "ReviewDate": "16/12/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Go To Meeting",
+    "Vendor": "GoToMeeting",
+    "RequesterEmail": "amelia.hughes11@nhs.net",
+    "ReviewDate": "10/01/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Icon Map Pro",
+    "Vendor": "Tekantis",
+    "RequesterEmail": "harry_johnson@nhs.net",
+    "ReviewDate": "08/07/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Jamf Trust",
+    "Vendor": "Jamf",
+    "RequesterEmail": "george.khan61@nhs.net",
+    "ReviewDate": "09/12/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Jira Service Management - Email Integration",
+    "Vendor": "Atlassian",
+    "RequesterEmail": "oliver_brown@nhs.net",
+    "ReviewDate": "11/07/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Kahoot App",
+    "Vendor": "Kahoot!",
+    "RequesterEmail": "george-hall@nhs.net",
+    "ReviewDate": "15/05/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Live Chat",
+    "Vendor": "Unknown",
+    "RequesterEmail": "ivywilson@nhs.net",
+    "ReviewDate": "17/06/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "MedxNote",
+    "Vendor": "Medxnote",
+    "RequesterEmail": "zara-shah@nhs.net",
+    "ReviewDate": "01/05/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "MedxPlanner",
+    "Vendor": "Medxnote",
+    "RequesterEmail": "mia-johnson@nhs.net",
+    "ReviewDate": "13/01/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Mendeley Cite",
+    "Vendor": "Mendeley",
+    "RequesterEmail": "ameliawhite@nhs.net",
+    "ReviewDate": "19/02/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Mentimeter - Teams App",
+    "Vendor": "Mentimeter",
+    "RequesterEmail": "oscar_harrison@nhs.net",
+    "ReviewDate": "06/02/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Microsoft Dynamics",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "isla_moore@nhs.net",
+    "ReviewDate": "17/06/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "MindMeister (Teams App)",
+    "Vendor": "MindMeister",
+    "RequesterEmail": "olivia.moore@nhs.net",
+    "ReviewDate": "24/11/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Mini Calendar and Date Picker",
+    "Vendor": "Unknown",
+    "RequesterEmail": "ava.white95@nhs.net",
+    "ReviewDate": "28/12/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Miro",
+    "Vendor": "Miro",
+    "RequesterEmail": "sofia.brown@nhs.net",
+    "ReviewDate": "07/07/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Mitel Assistant",
+    "Vendor": "Mitel",
+    "RequesterEmail": "ella-moore@nhs.net",
+    "ReviewDate": "10/11/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Mural",
+    "Vendor": "Mural",
+    "RequesterEmail": "oscar-clark@nhs.net",
+    "ReviewDate": "10/05/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "My Analytics",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "charlie-wright58@nhs.net",
+    "ReviewDate": "24/03/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "NearPod",
+    "Vendor": "Nearpod",
+    "RequesterEmail": "maya.green@nhs.net",
+    "ReviewDate": "09/10/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "NNF – Expenses Logon",
+    "Vendor": "NNF",
+    "RequesterEmail": "amelia-ahmed@nhs.net",
+    "ReviewDate": "09/12/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "OX.Waiting Room (OX.DH)",
+    "Vendor": "OX.DH",
+    "RequesterEmail": "william.wilson@nhs.net",
+    "ReviewDate": "11/10/24",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "People Graph",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "zara.walker@nhs.net",
+    "ReviewDate": "28/08/25",
+    "VendorConfidence": "Given"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Perfect Wiki",
+    "Vendor": "PerfectWiki",
+    "RequesterEmail": "sophiehall@nhs.net",
+    "ReviewDate": "30/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Power Automate with Attended and unattended RPA",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "maya.davies@nhs.net",
+    "ReviewDate": "05/02/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Time for Storm",
+    "Vendor": "Unknown",
+    "RequesterEmail": "sophie-harrison@nhs.net",
+    "ReviewDate": "25/06/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Approved",
+    "Application": "The Data Security and Protection Toolkit",
+    "Vendor": "NHS England",
+    "RequesterEmail": "william.white@nhs.net",
+    "ReviewDate": "13/08/25",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Approved",
+    "Application": "Ulysses",
+    "Vendor": "Ulysses GmbH & Co. KG",
+    "RequesterEmail": "isla.patel@nhs.net",
+    "ReviewDate": "18/09/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Adobe Experience Platform Debugger",
+    "Vendor": "Adobe",
+    "RequesterEmail": "islakhan@nhs.net",
+    "ReviewDate": "20/02/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Alemba Chat bot",
+    "Vendor": "Alemba",
+    "RequesterEmail": "oscar-wilson22@nhs.net",
+    "ReviewDate": "08/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Aruba Clearpass",
+    "Vendor": "HPE Aruba",
+    "RequesterEmail": "james.white@nhs.net",
+    "ReviewDate": "28/06/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Atlassian",
+    "Vendor": "Atlassian",
+    "RequesterEmail": "sofia_thompson@nhs.net",
+    "ReviewDate": "25/07/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Barracuda Cloud Control",
+    "Vendor": "Barracuda Networks",
+    "RequesterEmail": "ellaclark@nhs.net",
+    "ReviewDate": "05/01/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Bulk ADFS Domain Integration",
+    "Vendor": "Unknown",
+    "RequesterEmail": "theo.davies87@nhs.net",
+    "ReviewDate": "15/07/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "CitizenLab",
+    "Vendor": "CitizenLab",
+    "RequesterEmail": "arjun.roberts@nhs.net",
+    "ReviewDate": "15/11/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cisco Webex Calling",
+    "Vendor": "Cisco",
+    "RequesterEmail": "williamahmed@nhs.net",
+    "ReviewDate": "14/11/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Clinithink CLiX",
+    "Vendor": "Clinithink",
+    "RequesterEmail": "zara_hall@nhs.net",
+    "ReviewDate": "01/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cloudbooking – Outlook add-in",
+    "Vendor": "Cloudbooking",
+    "RequesterEmail": "grace_harrison@nhs.net",
+    "ReviewDate": "29/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Company Communicator",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "zara-hughes@nhs.net",
+    "ReviewDate": "16/10/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Compliance",
+    "Vendor": "Compliance",
+    "RequesterEmail": "graceedwards@nhs.net",
+    "ReviewDate": "13/12/23",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Compucare 8 Hybrid (SaaS)",
+    "Vendor": "Compucare",
+    "RequesterEmail": "harrytaylor@nhs.net",
+    "ReviewDate": "28/02/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Content Guru",
+    "Vendor": "Content Guru",
+    "RequesterEmail": "lucas-baker@nhs.net",
+    "ReviewDate": "02/03/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cornwall IT Services Training Portal",
+    "Vendor": "Unknown",
+    "RequesterEmail": "ella_lewis@nhs.net",
+    "ReviewDate": "28/06/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cronofy Ltd",
+    "Vendor": "Cronofy",
+    "RequesterEmail": "oscardavies@nhs.net",
+    "ReviewDate": "21/08/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "CyberArk PAM",
+    "Vendor": "CyberArk",
+    "RequesterEmail": "leoharrison@nhs.net",
+    "ReviewDate": "19/12/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Debugger for Adobe Experience Cloud",
+    "Vendor": "Adobe",
+    "RequesterEmail": "charlie.lewis39@nhs.net",
+    "ReviewDate": "20/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "EmailToPrint-KCC",
+    "Vendor": "EmailToPrint",
+    "RequesterEmail": "mohammedkhan@nhs.net",
+    "ReviewDate": "08/07/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Encodian trigr",
+    "Vendor": "Encodian",
+    "RequesterEmail": "maya-harrison@nhs.net",
+    "ReviewDate": "16/09/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Entra-ID-ISE-App-3.2",
+    "Vendor": "Entra",
+    "RequesterEmail": "isla.harrison@nhs.net",
+    "ReviewDate": "30/01/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Equitrac/Kofax AutoStore",
+    "Vendor": "Kofax",
+    "RequesterEmail": "mialewis@nhs.net",
+    "ReviewDate": "15/08/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "FlowFormaDPA",
+    "Vendor": "FlowForma",
+    "RequesterEmail": "ethan-jackson@nhs.net",
+    "ReviewDate": "30/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Fresh Service ‘ ServiceBot’",
+    "Vendor": "Freshworks",
+    "RequesterEmail": "oscar-baker@nhs.net",
+    "ReviewDate": "30/09/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "GMetrix",
+    "Vendor": "GMetrix",
+    "RequesterEmail": "zara-baker@nhs.net",
+    "ReviewDate": "05/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Graph Explorer",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "avataylor@nhs.net",
+    "ReviewDate": "09/06/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Haltian",
+    "Vendor": "Haltian",
+    "RequesterEmail": "ivy_davies@nhs.net",
+    "ReviewDate": "04/07/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "(HotHBot) House on the Hill (Service Desk software)",
+    "Vendor": "Unknown",
+    "RequesterEmail": "arjun.edwards@nhs.net",
+    "ReviewDate": "08/07/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Interact",
+    "Vendor": "Interact",
+    "RequesterEmail": "oliver.brown@nhs.net",
+    "ReviewDate": "08/06/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Jamf Trust",
+    "Vendor": "Jamf",
+    "RequesterEmail": "aisha-roberts@nhs.net",
+    "ReviewDate": "10/12/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Jira and Confluence LDAP",
+    "Vendor": "Atlassian",
+    "RequesterEmail": "olivia-smith@nhs.net",
+    "ReviewDate": "18/07/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Lansweeper",
+    "Vendor": "Lansweeper",
+    "RequesterEmail": "theo.harrison@nhs.net",
+    "ReviewDate": "21/07/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Litmos",
+    "Vendor": "SAP Litmos",
+    "RequesterEmail": "oscar_edwards@nhs.net",
+    "ReviewDate": "30/07/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "LMS365",
+    "Vendor": "ELEARNINGFORCE",
+    "RequesterEmail": "sofiaevans@nhs.net",
+    "ReviewDate": "18/08/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Microsoft Outlook Actionable Messages",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "arjun-harrison@nhs.net",
+    "ReviewDate": "17/03/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Microsoft Teams Emergency Operations Center",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "avaclark20@nhs.net",
+    "ReviewDate": "08/09/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Motion",
+    "Vendor": "Motion (UseMotion, Inc.)",
+    "RequesterEmail": "grace_thomas@nhs.net",
+    "ReviewDate": "12/11/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Mural",
+    "Vendor": "Mural",
+    "RequesterEmail": "george_shah@nhs.net",
+    "ReviewDate": "09/02/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "MyCompliance – NNF",
+    "Vendor": "MyCompliance",
+    "RequesterEmail": "oliver.patel@nhs.net",
+    "ReviewDate": "23/11/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Notion",
+    "Vendor": "Notion Labs, Inc.",
+    "RequesterEmail": "noah.lewis76@nhs.net",
+    "ReviewDate": "13/02/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "PaperCut – Email to Print",
+    "Vendor": "PaperCut",
+    "RequesterEmail": "william-hughes@nhs.net",
+    "ReviewDate": "15/05/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "People Directory by Accelerator 365",
+    "Vendor": "Accelerator 365",
+    "RequesterEmail": "mia.hall@nhs.net",
+    "ReviewDate": "02/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Qlik add-in",
+    "Vendor": "Qlik",
+    "RequesterEmail": "lucas-johnson50@nhs.net",
+    "ReviewDate": "25/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "React App Script Editior",
+    "Vendor": "Unknown",
+    "RequesterEmail": "mia-williams@nhs.net",
+    "ReviewDate": "27/02/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "RWP50",
+    "Vendor": "RWP50",
+    "RequesterEmail": "ethan.harrison@nhs.net",
+    "ReviewDate": "11/01/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "SARD",
+    "Vendor": "SARD JV",
+    "RequesterEmail": "grace_thomas@nhs.net",
+    "ReviewDate": "12/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "ServiceBot",
+    "Vendor": "ServiceBot",
+    "RequesterEmail": "mohammed-shah@nhs.net",
+    "ReviewDate": "20/11/23",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Sembly",
+    "Vendor": "Sembly AI",
+    "RequesterEmail": "ethan.brown@nhs.net",
+    "ReviewDate": "21/12/23",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "SendGrid",
+    "Vendor": "Twilio SendGrid",
+    "RequesterEmail": "sophie_wright@nhs.net",
+    "ReviewDate": "17/07/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Sideways6 Idea management software",
+    "Vendor": "Unknown",
+    "RequesterEmail": "oliver.smith@nhs.net",
+    "ReviewDate": "28/07/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Smartway2 Teams Add-in",
+    "Vendor": "Smartway2",
+    "RequesterEmail": "miawilson@nhs.net",
+    "ReviewDate": "08/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Solgari Ltd",
+    "Vendor": "Solgari",
+    "RequesterEmail": "mohammed-singh@nhs.net",
+    "ReviewDate": "10/09/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Timetabler",
+    "Vendor": "Timetabler Ltd",
+    "RequesterEmail": "sofia_wright@nhs.net",
+    "ReviewDate": "27/05/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "UHP IIToolKit",
+    "Vendor": "Unknown",
+    "RequesterEmail": "aisha-moore3@nhs.net",
+    "ReviewDate": "24/12/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Urefer",
+    "Vendor": "Urefer",
+    "RequesterEmail": "mia-hughes57@nhs.net",
+    "ReviewDate": "08/01/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Varonis",
+    "Vendor": "Varonis Systems",
+    "RequesterEmail": "miathomas@nhs.net",
+    "ReviewDate": "06/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Village Software",
+    "Vendor": "Village Software",
+    "RequesterEmail": "lucas_harrison@nhs.net",
+    "ReviewDate": "10/08/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Workable",
+    "Vendor": "Workable",
+    "RequesterEmail": "grace-hughes@nhs.net",
+    "ReviewDate": "19/06/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "8X*",
+    "Vendor": "Unknown",
+    "RequesterEmail": "william_shah@nhs.net",
+    "ReviewDate": "16/11/23",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Accurx",
+    "Vendor": "Accurx",
+    "RequesterEmail": "zarawright@nhs.net",
+    "ReviewDate": "31/01/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Additional Add-in for 365 for TWINKLE",
+    "Vendor": "Unknown",
+    "RequesterEmail": "freya.moore@nhs.net",
+    "ReviewDate": "07/05/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Adobe Cloud",
+    "Vendor": "Adobe",
+    "RequesterEmail": "oscar.thompson@nhs.net",
+    "ReviewDate": "29/06/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Adobe Creative Cloud",
+    "Vendor": "Adobe",
+    "RequesterEmail": "mohammed_moore@nhs.net",
+    "ReviewDate": "21/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Aequos Modern Data Visualizer",
+    "Vendor": "Aequos",
+    "RequesterEmail": "amelia.patel@nhs.net",
+    "ReviewDate": "16/03/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Alertive",
+    "Vendor": "Alertive",
+    "RequesterEmail": "olivia.evans@nhs.net",
+    "ReviewDate": "22/02/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Assist",
+    "Vendor": "Assist",
+    "RequesterEmail": "jack_evans@nhs.net",
+    "ReviewDate": "30/12/23",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Aternity",
+    "Vendor": "Aternity",
+    "RequesterEmail": "isla.clark@nhs.net",
+    "ReviewDate": "04/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "AvePoint Cloud Backup",
+    "Vendor": "AvePoint",
+    "RequesterEmail": "oliver-thompson44@nhs.net",
+    "ReviewDate": "03/06/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Blinx Solutions – PACO (Patient and Care Optimiser)",
+    "Vendor": "Unknown",
+    "RequesterEmail": "zara.thomas@nhs.net",
+    "ReviewDate": "12/05/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Boomerang",
+    "Vendor": "Baydin, Inc. (Boomerang)",
+    "RequesterEmail": "gracebrown@nhs.net",
+    "ReviewDate": "24/03/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Bytes Quantum 365",
+    "Vendor": "Bytes Software Services",
+    "RequesterEmail": "ethansmith97@nhs.net",
+    "ReviewDate": "08/04/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cal.com",
+    "Vendor": "Cal.com, Inc.",
+    "RequesterEmail": "theo_white@nhs.net",
+    "ReviewDate": "23/06/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Calendly",
+    "Vendor": "Calendly, LLC",
+    "RequesterEmail": "ava_wright@nhs.net",
+    "ReviewDate": "25/02/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "CaseHub",
+    "Vendor": "CaseHub",
+    "RequesterEmail": "isla_baker@nhs.net",
+    "ReviewDate": "12/05/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Caption Ed",
+    "Vendor": "CareScribe Ltd (Caption.Ed)",
+    "RequesterEmail": "george-moore@nhs.net",
+    "ReviewDate": "23/12/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Champion Management Platform",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "ella_ahmed@nhs.net",
+    "ReviewDate": "05/06/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cisco WebEx Hybrid Calendar Service",
+    "Vendor": "Cisco",
+    "RequesterEmail": "zaraedwards@nhs.net",
+    "ReviewDate": "16/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Clearooms Room Display v1.5.3",
+    "Vendor": "Clearooms",
+    "RequesterEmail": "freyataylor@nhs.net",
+    "ReviewDate": "24/02/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "ClearPass",
+    "Vendor": "HPE Aruba",
+    "RequesterEmail": "grace-hall@nhs.net",
+    "ReviewDate": "01/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "ClipChamp",
+    "Vendor": "ClipChamp",
+    "RequesterEmail": "george-edwards@nhs.net",
+    "ReviewDate": "09/05/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cloudbooking",
+    "Vendor": "Cloudbooking",
+    "RequesterEmail": "harry-clark@nhs.net",
+    "ReviewDate": "07/07/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Confluence Cloud",
+    "Vendor": "Atlassian",
+    "RequesterEmail": "olivia_roberts@nhs.net",
+    "ReviewDate": "18/08/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Convene",
+    "Vendor": "Azeus Convene",
+    "RequesterEmail": "ellashah@nhs.net",
+    "ReviewDate": "27/06/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Convene in Teams",
+    "Vendor": "Azeus Convene",
+    "RequesterEmail": "grace-edwards@nhs.net",
+    "ReviewDate": "22/06/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Cronofy (enterprise connect)",
+    "Vendor": "Cronofy",
+    "RequesterEmail": "freya_jackson@nhs.net",
+    "ReviewDate": "13/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Digital communications",
+    "Vendor": "Unknown",
+    "RequesterEmail": "isla_davies@nhs.net",
+    "ReviewDate": "14/10/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Diligent Boards",
+    "Vendor": "Diligent",
+    "RequesterEmail": "mohammed-lewis@nhs.net",
+    "ReviewDate": "31/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Doc Abode",
+    "Vendor": "Doc Abode Ltd",
+    "RequesterEmail": "sophie.hughes@nhs.net",
+    "ReviewDate": "27/08/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Draw add in in MS Word",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "harry-jones@nhs.net",
+    "ReviewDate": "23/02/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Developer Portal",
+    "Vendor": "Unknown",
+    "RequesterEmail": "lucasmoore1@nhs.net",
+    "ReviewDate": "26/03/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Email Wellbeing",
+    "Vendor": "Unknown",
+    "RequesterEmail": "oliviahughes74@nhs.net",
+    "ReviewDate": "18/08/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "ER Tracker for Outlook",
+    "Vendor": "Unknown",
+    "RequesterEmail": "william.clark@nhs.net",
+    "ReviewDate": "07/01/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Excel-to-Word Document Automation",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "oliver.davies@nhs.net",
+    "ReviewDate": "10/01/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Fantastical (Mac)",
+    "Vendor": "Flexibits Inc.",
+    "RequesterEmail": "olivia_shah@nhs.net",
+    "ReviewDate": "18/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Fantastical calendar",
+    "Vendor": "Flexibits Inc.",
+    "RequesterEmail": "noah_hughes@nhs.net",
+    "ReviewDate": "14/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Fireflies.ai",
+    "Vendor": "Fireflies.ai, Inc.",
+    "RequesterEmail": "olivia-baker@nhs.net",
+    "ReviewDate": "03/04/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "FMS Employee Resource Scheduler for Outlook",
+    "Vendor": "FMS, Inc.",
+    "RequesterEmail": "leobrown@nhs.net",
+    "ReviewDate": "04/09/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Freshdesk",
+    "Vendor": "Freshworks",
+    "RequesterEmail": "isla.shah@nhs.net",
+    "ReviewDate": "23/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Freshservice",
+    "Vendor": "Freshworks",
+    "RequesterEmail": "ella.white@nhs.net",
+    "ReviewDate": "19/02/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Google Analytics",
+    "Vendor": "Google",
+    "RequesterEmail": "oliviawhite@nhs.net",
+    "ReviewDate": "15/10/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Hyperlinks",
+    "Vendor": "Hyperlinks",
+    "RequesterEmail": "amelia_hughes@nhs.net",
+    "ReviewDate": "01/10/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "HaloITSM",
+    "Vendor": "Halo Service Solutions",
+    "RequesterEmail": "lucasthompson@nhs.net",
+    "ReviewDate": "10/09/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Imprivata GroundControl",
+    "Vendor": "Imprivata",
+    "RequesterEmail": "sofia_thomas71@nhs.net",
+    "ReviewDate": "02/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "iServer365",
+    "Vendor": "Orbus Software",
+    "RequesterEmail": "george_jackson@nhs.net",
+    "ReviewDate": "24/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Inspection and Manage inspections",
+    "Vendor": "Unknown",
+    "RequesterEmail": "lucas.moore@nhs.net",
+    "ReviewDate": "10/08/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "IRIS Global Search (SPFx WebPart v1.0.0.)",
+    "Vendor": "IRIS",
+    "RequesterEmail": "miahughes@nhs.net",
+    "ReviewDate": "07/02/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Integration for Rise Up (learning platform)",
+    "Vendor": "Rise Up",
+    "RequesterEmail": "sophiethomas@nhs.net",
+    "ReviewDate": "26/10/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Kaltura",
+    "Vendor": "Kaltura",
+    "RequesterEmail": "oliviapatel@nhs.net",
+    "ReviewDate": "05/12/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Kallidus Learn",
+    "Vendor": "Kallidus",
+    "RequesterEmail": "mayaclark@nhs.net",
+    "ReviewDate": "30/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Kallidus Ltd, version 1.0.2",
+    "Vendor": "Kallidus",
+    "RequesterEmail": "lucasjohnson@nhs.net",
+    "ReviewDate": "21/01/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Kedance",
+    "Vendor": "Kedance",
+    "RequesterEmail": "noah.brown@nhs.net",
+    "ReviewDate": "01/06/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Liberty Converse",
+    "Vendor": "Netcall",
+    "RequesterEmail": "freya_green@nhs.net",
+    "ReviewDate": "07/03/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Lifesize version 1.0.3",
+    "Vendor": "Lifesize",
+    "RequesterEmail": "charlie_jackson16@nhs.net",
+    "ReviewDate": "22/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Mail Merge Toolkit",
+    "Vendor": "MAPILab",
+    "RequesterEmail": "lucas.walker@nhs.net",
+    "ReviewDate": "16/11/23",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "MedExNote Beep",
+    "Vendor": "Medxnote",
+    "RequesterEmail": "isla-moore@nhs.net",
+    "ReviewDate": "25/07/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Metalogix Essentials",
+    "Vendor": "Quest Software (Metalogix)",
+    "RequesterEmail": "harry-khan@nhs.net",
+    "ReviewDate": "25/09/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Microsoft Graph Teams",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "jack-patel@nhs.net",
+    "ReviewDate": "29/11/23",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Microsoft 365 Learning Pathways",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "olivia-baker@nhs.net",
+    "ReviewDate": "30/05/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Moodle",
+    "Vendor": "Moodle",
+    "RequesterEmail": "harry_walker90@nhs.net",
+    "ReviewDate": "18/01/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Mozilla Thunderbird",
+    "Vendor": "Mozilla",
+    "RequesterEmail": "ivy.patel@nhs.net",
+    "ReviewDate": "03/04/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "MyPossibleSelf: Mental Health",
+    "Vendor": "My Possible Self Ltd",
+    "RequesterEmail": "amelia_clark@nhs.net",
+    "ReviewDate": "20/06/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "myWorkNest",
+    "Vendor": "WorkNest",
+    "RequesterEmail": "mia_johnson64@nhs.net",
+    "ReviewDate": "07/05/25",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Netcall",
+    "Vendor": "Netcall",
+    "RequesterEmail": "theo.shah@nhs.net",
+    "ReviewDate": "04/12/23",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Netwrix",
+    "Vendor": "Netwrix",
+    "RequesterEmail": "leo.edwards@nhs.net",
+    "ReviewDate": "21/09/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "NeuroMapper",
+    "Vendor": "Unknown",
+    "RequesterEmail": "ava.edwards@nhs.net",
+    "ReviewDate": "08/08/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Outlook Mail Merge Attachment",
+    "Vendor": "Unknown",
+    "RequesterEmail": "lily_shah@nhs.net",
+    "ReviewDate": "23/08/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Otter AI",
+    "Vendor": "Otter.ai (AISense, Inc.)",
+    "RequesterEmail": "ivy.khan@nhs.net",
+    "ReviewDate": "15/09/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Perkbox",
+    "Vendor": "Perkbox",
+    "RequesterEmail": "zara_smith@nhs.net",
+    "ReviewDate": "11/11/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Planon Meeting Management",
+    "Vendor": "Planon",
+    "RequesterEmail": "amelia-singh@nhs.net",
+    "ReviewDate": "10/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Polly",
+    "Vendor": "Polly.ai",
+    "RequesterEmail": "olivia.green@nhs.net",
+    "ReviewDate": "22/02/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Pulse Outlook Integration & One Touch Join",
+    "Vendor": "Unknown",
+    "RequesterEmail": "leo-thomas@nhs.net",
+    "ReviewDate": "18/10/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Project Plan 1 trial",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "amelia_walker@nhs.net",
+    "ReviewDate": "11/01/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Qualtrics",
+    "Vendor": "Qualtrics",
+    "RequesterEmail": "mia.lewis@nhs.net",
+    "ReviewDate": "23/07/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Report Phishing",
+    "Vendor": "Microsoft",
+    "RequesterEmail": "amelia-davies@nhs.net",
+    "ReviewDate": "22/12/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Rest API",
+    "Vendor": "Unknown",
+    "RequesterEmail": "james-ahmed@nhs.net",
+    "ReviewDate": "23/07/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Re:Work",
+    "Vendor": "Unknown",
+    "RequesterEmail": "charlie_baker@nhs.net",
+    "ReviewDate": "14/06/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Rhapsody Integration Engine",
+    "Vendor": "Lyniate (Rhapsody)",
+    "RequesterEmail": "zara.wilson@nhs.net",
+    "ReviewDate": "30/12/23",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Richmond Richdesk",
+    "Vendor": "Richmond Systems",
+    "RequesterEmail": "mia-taylor@nhs.net",
+    "ReviewDate": "14/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "RX3 – Blue Prism – Microsoft 365 Outlook VBO",
+    "Vendor": "SS&C Blue Prism",
+    "RequesterEmail": "zaraedwards@nhs.net",
+    "ReviewDate": "22/09/25",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "SaneBox",
+    "Vendor": "SaneBox, Inc.",
+    "RequesterEmail": "sofiabaker@nhs.net",
+    "ReviewDate": "18/09/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "SimplyDo",
+    "Vendor": "Simply Do Ideas Ltd",
+    "RequesterEmail": "charlie.green@nhs.net",
+    "ReviewDate": "24/09/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "SkinPick",
+    "Vendor": "SkinPick (Online Psychology Services, LLC)",
+    "RequesterEmail": "noah_thomas@nhs.net",
+    "ReviewDate": "26/08/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Sleepio",
+    "Vendor": "Big Health",
+    "RequesterEmail": "ivythompson@nhs.net",
+    "ReviewDate": "27/10/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Smartmail",
+    "Vendor": "Unknown",
+    "RequesterEmail": "sofia-green@nhs.net",
+    "ReviewDate": "03/04/25",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Smartsheet",
+    "Vendor": "Smartsheet Inc.",
+    "RequesterEmail": "mia-green@nhs.net",
+    "ReviewDate": "07/11/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Soliton Radiology+",
+    "Vendor": "Soliton Systems",
+    "RequesterEmail": "noahwalker61@nhs.net",
+    "ReviewDate": "12/12/23",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Spark Desktop 3",
+    "Vendor": "Readdle",
+    "RequesterEmail": "mohammedsmith@nhs.net",
+    "ReviewDate": "24/09/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Spark email client",
+    "Vendor": "Readdle",
+    "RequesterEmail": "grace-white@nhs.net",
+    "ReviewDate": "20/11/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Sunsama",
+    "Vendor": "Sunsama Inc.",
+    "RequesterEmail": "william-baker@nhs.net",
+    "ReviewDate": "28/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Tableau",
+    "Vendor": "Tableau (Salesforce)",
+    "RequesterEmail": "lucas.singh@nhs.net",
+    "ReviewDate": "03/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Task in a Box for Outlook 2.0.0.16",
+    "Vendor": "Task in a Box",
+    "RequesterEmail": "aishaedwards@nhs.net",
+    "ReviewDate": "31/07/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "The Desk Booking App",
+    "Vendor": "Unknown",
+    "RequesterEmail": "mohammedthomas@nhs.net",
+    "ReviewDate": "16/01/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Tikit Virtual Agent",
+    "Vendor": "Advanced (Tikit)",
+    "RequesterEmail": "ava.jackson@nhs.net",
+    "ReviewDate": "28/11/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "TOPdesk Ticket System",
+    "Vendor": "TOPdesk",
+    "RequesterEmail": "ethanevans@nhs.net",
+    "ReviewDate": "18/02/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Vacation Tracker",
+    "Vendor": "Vacation Tracker",
+    "RequesterEmail": "ava_williams@nhs.net",
+    "ReviewDate": "25/05/24",
+    "VendorConfidence": "Medium"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Web Viewer",
+    "Vendor": "Unknown",
+    "RequesterEmail": "ameliawalker@nhs.net",
+    "ReviewDate": "16/02/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Watson ChatBot",
+    "Vendor": "IBM",
+    "RequesterEmail": "zara.williams@nhs.net",
+    "ReviewDate": "18/08/25",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Webex Calling",
+    "Vendor": "Cisco",
+    "RequesterEmail": "oliver.smith@nhs.net",
+    "ReviewDate": "26/07/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Workplace Live",
+    "Vendor": "Workplace",
+    "RequesterEmail": "williamwilson@nhs.net",
+    "ReviewDate": "11/05/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "WM Reply Accelerator SPFx and Components",
+    "Vendor": "WM Reply (Reply)",
+    "RequesterEmail": "lily-jones@nhs.net",
+    "ReviewDate": "11/05/24",
+    "VendorConfidence": "High"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "X-Tracking to MDAM2 integration",
+    "Vendor": "Unknown",
+    "RequesterEmail": "lucas_green47@nhs.net",
+    "ReviewDate": "22/07/24",
+    "VendorConfidence": "Low"
+  },
+  {
+    "Status": "Rejected",
+    "Application": "Zotero Reference Walkthrough",
+    "Vendor": "Zotero (Corporation for Digital Scholarship)",
+    "RequesterEmail": "sophie-roberts@nhs.net",
+    "ReviewDate": "29/11/23",
+    "VendorConfidence": "Medium"
+  }
+]
