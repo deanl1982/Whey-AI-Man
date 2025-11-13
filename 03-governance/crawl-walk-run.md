@@ -8,7 +8,7 @@
 
 | Field | Value |
 | ----: | ----- |
-| Title | `GMicrosoft's Crawl, Walk, Run Framework for Generative AI Adoption` |
+| Title | `Microsoft's Crawl, Walk, Run Framework for Generative AI Adoption` |
 | Author(s) | `dean.lawrence4@nhs.net` |
 | Version | `0.1` |
 | Date | `11.11.2025` |
