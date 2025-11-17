@@ -51,7 +51,7 @@ try:
                     AppVendor: "MediCore Systems"
                     AppVersion: "2.4.1"
                     RequestedEntraPermissions: ["User.Read.All (Application)", "Directory.Read.All (Application)"]
-                    DataStorageLocation: ""
+                    DataStorageLocation: "UK"
 """
     )
     print(f"Sent message: {message.id}")
