@@ -10,98 +10,92 @@ This repository contains infrastructure as code (IaC) and setup scripts for depl
 │   └── setup-vm.sh     # Shell script for installing and configuring n8n and dependencies
 ```
 
-## Prerequisites
+# Whey-AI-Man
 
-- Azure CLI installed and configured
-- Terraform installed
-- Access to an Azure subscription
-- Basic understanding of Docker and networking concepts
+Summary
+-------
 
-## Infrastructure Components
+Whey-AI-Man is a small repository that combines infrastructure-as-code and lightweight AI/automation prototypes. The repo provides scripts and Terraform to provision an n8n automation VM, plus a folder of example AI apps and sample data for local experimentation.
 
-The project sets up the following Azure resources:
+Why this repo exists:
+- Provision a reproducible n8n workflow automation environment
+- Host and iterate on simple AI-powered apps and example prompts/data
 
-- Resource Group (named 'rg-whey-ai-man-n8n' by default)
-- Virtual Network with a dedicated subnet (10.0.0.0/16 network space)
-- Public IP address (Dynamic allocation)
-- Network Security Group with rules for:
-  - SSH (port 22)
-  - HTTP (port 80)
-  - HTTPS (port 443)
-  - n8n (port 5678)
-- Ubuntu 18.04 LTS Virtual Machine (Standard_B2s size)
+Repository layout
+-----------------
 
-## Quick Start
+- [01-build-n8n](01-build-n8n): Terraform and shell scripts to provision and configure an n8n VM (networking, nginx, Docker, n8n setup).
+- [02-apps-tda](02-apps-tda): Python prototypes, example prompts, and sample JSON data used by the AI/agent experiments.
+- [01-build-n8n/ai-agent-files](01-build-n8n/ai-agent-files): system prompt and supporting files used by the agent automation.
 
-1. **Initialize Terraform**
+Quickstart (local/high level)
+-----------------------------
+
+Prerequisites:
+- Terraform
+- Azure CLI (for Azure deployments) or appropriate cloud credentials
+- Bash shell (or WSL on Windows)
+- Python 3.10+ and pip (for the example apps)
+
+Basic steps:
+1. Provision infrastructure (optional — skip if you only want to run local examples):
 
    ```bash
-   cd 01-Build-N8N
+   cd 01-build-n8n
    terraform init
-   ```
-
-2. **Deploy Azure Infrastructure**
-
-   ```bash
-   terraform plan
    terraform apply
    ```
 
-3. **Configure n8n**
-   - Connect to the VM using SSH (password: YourSecurePassword123!)
-   - Run the setup script:
+2. After the VM is created, connect and run the setup script on the VM (example):
 
-     ```bash
-     sudo chmod +x setup-vm.sh
-     ./setup-vm.sh
-     ```
+   ```bash
+   # on the provisioned VM
+   sudo chmod +x setup-vm.sh
+   ./setup-vm.sh
+   ```
 
-   After setup completes:
-   - n8n will be available at `http://your-vm-ip:5678`
-   - Nginx will be configured and running
-   - UFW firewall will be enabled with proper rules
+3. Run the example AI app locally:
 
-## Architecture
+   ```bash
+   cd 02-apps-tda
+   python -m venv .venv
+   . .venv/bin/activate   # or .venv\\Scripts\\activate on Windows
+   pip install -r requirements.txt  # if present
+   python apps-tda.py --help
+   ```
 
-The setup creates a VM in Azure with:
+Files of interest
+-----------------
+- [01-build-n8n/n8n-vm.tf](01-build-n8n/n8n-vm.tf) — Terraform configuration for the VM.
+- [01-build-n8n/setup-vm.sh](01-build-n8n/setup-vm.sh) — VM setup script (Docker, nginx, n8n).
 
-- Docker for containerization
-- n8n running in a Docker container with persistence
-- Nginx installed directly on the system (not containerized)
-- UFW (Uncomplicated Firewall) enabled with Nginx rules
-- Persistent volume for n8n data
+Notes & next steps
+------------------
+- The repo mixes infra and prototype code; treat the scripts as examples rather than production-ready automation.
+- If you plan to deploy the VM, review and update any secrets and network rules before applying Terraform.
 
-## Network Configuration
+Contributing
+------------
 
-- n8n runs on port 5678 (internal)
-- Nginx handles HTTP(80) and HTTPS(443) traffic
-- Custom Docker network 'web' for internal communication
+Fork, open an issue, or submit a PR. If you add features, please include short README notes and any dependency changes (requirements file, etc.).
 
-## Security Considerations
+License
+-------
 
-- Network Security Group rules control inbound traffic
-- n8n is only accessible through Nginx reverse proxy
-- Docker containers are isolated using a dedicated network
+See [LICENSE](LICENSE) if present.
 
-## Customization
+Project status
+--------------
 
-To modify the default configuration:
+This repository is experimental and intended for development, testing, and demos. The infra scripts and example apps are NOT production-ready — review secrets, networking, and hardening before any real deployment.
 
-1. **Azure Resources**: Edit `n8n-vm.tf` to change:
-   - Resource group name
-   - Location
-   - Network configurations
-   - VM size
+Security & privacy
+------------------
 
-2. **n8n Setup**: Modify `setup-n8n.sh` to:
-   - Change Docker container configurations
-   - Update environment variables
-   - Modify networking settings
+- Do not commit secrets or credentials. Replace any placeholder passwords and keys before applying Terraform.
+- Sample data may include synthetic or trimmed data for demos only.
 
-## Contributing
+Contact
+-------
 
-Feel free to submit issues and enhancement requests!
-
-## License
-
-[MIT License](LICENSE)
+If you need help or want to propose changes, open an issue or create a pull request on GitHub.
