@@ -42,15 +42,18 @@ EOF'
 
 echo "Custom welcome page created at http://$(hostname -I | awk '{print $1}')/"
 
-# Install n8n
-echo "[4/6] Installing n8n container..."
+# Install n8n with AI/LangChain support
+echo "[4/6] Installing n8n container with AI support..."
 sudo docker run -d \
   --name n8n \
   --restart unless-stopped \
-  -p 5678:5678 \
+  --network host \
   -v n8n_data:/home/node/.n8n \
   -e N8N_SECURE_COOKIE=false \
-  n8nio/n8n
+  -e N8N_HOST=0.0.0.0 \
+  -e N8N_PORT=5678 \
+  -e N8N_PROTOCOL=http \
+  n8nio/n8n:latest
 
 # Install Ollama
 echo "[5/6] Installing Ollama..."
