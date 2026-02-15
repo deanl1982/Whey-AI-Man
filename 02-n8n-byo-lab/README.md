@@ -86,8 +86,8 @@ ls -la
 # Copy example configuration
 cp terraform.tfvars.example terraform.tfvars
 
-# Edit with Cloud Shell editor
-code terraform.tfvars
+# Edit with nano (recommended for beginners)
+nano terraform.tfvars
 ```
 
 **Required Changes:**
@@ -98,7 +98,13 @@ vm_count = 1                                # 1 for demo, N for participants
 resource_group_name = "rg-my-disk-lab"     # Change if needed
 ```
 
-Save and close the editor (Ctrl+S, then Ctrl+Q).
+💾 **Save:** Press `Ctrl+O`, then `Enter`
+❌ **Exit:** Press `Ctrl+X`
+
+**Alternative editors in Cloud Shell:**
+- `nano terraform.tfvars` (easiest, recommended)
+- `vi terraform.tfvars` (if you prefer vi/vim)
+- Click the **{ }** editor icon in Cloud Shell toolbar
 
 #### Step 4: Deploy with Terraform
 ```bash

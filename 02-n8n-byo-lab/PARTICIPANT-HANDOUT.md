@@ -45,8 +45,8 @@ ls -la
 # Copy the example configuration
 cp terraform.tfvars.example terraform.tfvars
 
-# Open the editor
-code terraform.tfvars
+# Open the editor (using nano - easiest for beginners)
+nano terraform.tfvars
 ```
 
 **Update these values:**
@@ -56,8 +56,10 @@ vm_count = 1                                # Keep as 1 for your personal VM
 resource_group_name = "rg-YOUR-NAME-lab"   # Make it unique with your name
 ```
 
-💾 **Save:** Press `Ctrl+S`
-❌ **Close editor:** Press `Ctrl+Q`
+💾 **Save:** Press `Ctrl+O`, then `Enter`
+❌ **Exit:** Press `Ctrl+X`
+
+**Tip:** You can also click the **{ }** icon in the Cloud Shell toolbar to use the visual editor!
 
 ### Step 4: Deploy Your Lab VM
 ```bash
