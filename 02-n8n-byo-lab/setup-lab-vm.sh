@@ -12,9 +12,9 @@ echo ""
 echo "[1/5] Updating system packages..."
 sudo apt update && sudo apt upgrade -y
 
-# Install Docker
-echo "[2/5] Installing Docker..."
-sudo apt install -y docker.io
+# Install Docker and prerequisites
+echo "[2/5] Installing Docker and prerequisites..."
+sudo apt install -y docker.io zstd
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo usermod -aG docker $USER
