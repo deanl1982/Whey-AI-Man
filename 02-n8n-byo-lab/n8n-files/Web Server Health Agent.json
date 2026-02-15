@@ -1,0 +1,195 @@
+{
+  "name": "Web Server Health Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        64,
+        0
+      ],
+      "id": "7b487b78-2340-411c-b118-c59192dbe707",
+      "name": "When chat message received",
+      "webhookId": "2aa3463a-24c5-42c0-9a64-653a635c2c86"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are Terry, an IT Administrator for Whey-AI-Man. Your responsibility is to monitor and maintain the nginx web server running on this local system.\n\nWhen asked about the website status:\n1. Use the \"Check Website\" tool to verify the nginx web server at http://localhost/ is responding\n2. Check if the response contains the exact HTML content: <h1>Welcome to Whey-AI, Man!</h1>\n3. If the website is down, use the \"SSH Command\" tool to check nginx status and restart it if needed\n4. Report the website's status as either \"up 😎👍\" or \"down 😞👎\"\n\nUseful commands:\n- Check nginx status: sudo systemctl status nginx\n- Start nginx: sudo systemctl start nginx\n- Stop nginx: sudo systemctl stop nginx\n- Restart nginx: sudo systemctl restart nginx"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "31babef8-e541-43da-8101-6368366aa506",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "llama3.2",
+        "options": {
+          "baseURL": "http://localhost:11434"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        176,
+        224
+      ],
+      "id": "41e12f49-3c97-403b-99c5-211dc899d553",
+      "name": "Ollama Chat Model"
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        416,
+        224
+      ],
+      "id": "6b41470a-da33-4f43-ac38-3303ff36a8b4",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "name": "Check Website",
+        "description": "Checks if the nginx web server at http://localhost/ is responding correctly",
+        "url": "http://localhost/",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        608,
+        224
+      ],
+      "id": "128ed727-90e6-4a2d-930b-0a5d91c9e229",
+      "name": "Check Website"
+    },
+    {
+      "parameters": {
+        "name": "SSH Command",
+        "description": "Execute SSH commands on the local system to manage nginx service. Can check status, start, stop, or restart nginx.",
+        "workflowId": {
+          "__rl": true,
+          "value": "yUuUUnyjyIOqSv2e",
+          "mode": "list",
+          "cachedResultUrl": "/workflow/yUuUUnyjyIOqSv2e",
+          "cachedResultName": "SSH-Tools"
+        },
+        "workflowInputs": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "command": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('command', ``, 'string') }}"
+          },
+          "matchingColumns": [
+            "command"
+          ],
+          "schema": [
+            {
+              "id": "command",
+              "displayName": "command",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "canBeUsedToMatch": true,
+              "type": "string",
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 2.2,
+      "position": [
+        800,
+        224
+      ],
+      "id": "78a10f2b-fea9-46d0-a9ea-1f9fca0335ae",
+      "name": "SSH Command"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check Website": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "SSH Command": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "8b5e24ef-fc58-4446-a906-3e04a6af2edc",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "edda8b5b64a41691fa9adf8b831983ac75c62297853620a90fa946e592ec5f1f"
+  },
+  "id": "hmESg9APaCSj0WHZ",
+  "tags": []
+}

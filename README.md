@@ -29,17 +29,18 @@ Complete infrastructure-as-code setup for deploying n8n automation platform on A
 
 ---
 
-### 02-n8n-byo-lab/ ⭐ **New!**
-**Intelligent Disk Space Cleanup Lab**
+### 02-n8n-byo-lab/ ⭐ **Updated!**
+**AI-Powered Web Server Health Monitoring Lab**
 
-A complete 45-minute hands-on lab teaching infrastructure automation with n8n and AI.
+A streamlined 45-minute hands-on lab teaching n8n automation with local AI. Build an intelligent agent that monitors nginx and automatically fixes issues.
 
 **What You'll Build:**
-An AI-powered workflow that:
-- 🔍 Monitors disk space usage automatically
-- 🤖 Uses LLM (Llama2) to analyze what's consuming space
-- 🧹 Intelligently cleans up old files
-- ✅ Verifies and reports results
+An AI agent that:
+- 🔍 Monitors nginx web server health
+- 🤖 Uses Ollama (llama3.2) to analyze server state
+- 🔧 Automatically restarts nginx when down
+- 💬 Interacts via chat interface
+- ✅ Reports status and actions taken
 
 **Perfect For:**
 - Azure Infrastructure SMEs
@@ -48,25 +49,22 @@ An AI-powered workflow that:
 - Anyone interested in AI-powered automation
 
 **Learning Outcomes:**
-- n8n workflow automation fundamentals
-- Integrating Ollama/Llama2 for intelligent decisions
-- Prompt engineering for DevOps tasks
+- n8n workflow automation with AI agents
+- Integrating Ollama for intelligent decision-making
+- Using SSH tools for system management
 - Monitor → Detect → Analyze → Remediate patterns
-- Translating to Azure infrastructure scenarios
+- Chat-based infrastructure management
 
 **What's Included:**
 ```
 02-n8n-byo-lab/
-├── README.md                  # Lab overview & quick start
-├── DEPLOYMENT.md              # Detailed deployment guide
-├── PARTICIPANT-HANDOUT.md     # Printable participant guide
-├── lab-guide.md               # Step-by-step lab instructions
+├── README.md                  # Complete lab guide & setup
 ├── n8n-vm.tf                  # Terraform for Azure VMs
 ├── setup-lab-vm.sh            # Automated VM setup script
-├── sample-data/               # Test scenarios & verification
-├── reference/                 # Command cheatsheets & docs
-├── solutions/                 # Complete workflow export
-└── extensions/                # 11 advanced challenges
+├── terraform.tfvars.example   # Configuration template
+└── n8n-files/                 # Ready-to-import workflows
+    ├── SSH-Tools.json         # SSH command execution
+    └── Web Server Health Agent.json  # AI monitoring agent
 ```
 
 **Quick Start:**
@@ -75,7 +73,8 @@ An AI-powered workflow that:
 git clone https://github.com/deanl1982/Whey-AI-Man.git
 cd Whey-AI-Man/02-n8n-byo-lab
 
-# Follow README for Azure Cloud Shell deployment
+# Deploy with Azure Cloud Shell + Terraform
+# Import workflows, test by stopping nginx!
 ```
 
 **Duration:** 45 minutes
