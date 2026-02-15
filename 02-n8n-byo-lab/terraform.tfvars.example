@@ -1,0 +1,17 @@
+# Terraform Variables for Disk Cleanup Lab
+# Copy this file to terraform.tfvars and customize
+
+# Resource group name (change to avoid conflicts)
+resource_group_name = "rg-disk-cleanup-lab"
+
+# Azure region
+location = "uksouth"
+
+# VM admin credentials
+admin_username = "adminuser"
+admin_password = "YourSecurePassword123!"  # CHANGE THIS!
+
+# Number of VMs to create (one per lab participant)
+# For demo/testing: set to 1
+# For group lab: set to number of participants
+vm_count = 1
