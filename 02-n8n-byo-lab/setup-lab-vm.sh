@@ -31,7 +31,37 @@ sudo docker run -d \
 
 # Install Ollama
 echo "[4/5] Installing Ollama..."
-curl -fsSL https://ollama.com/install.sh | sh
+echo "Attempting to install Ollama (this may take a moment)..."
+if ! curl -fsSL https://ollama.com/install.sh | sh; then
+    echo "Warning: Ollama installation script failed. Trying alternative method..."
+    # Alternative: Download specific version directly
+    OLLAMA_VERSION="0.1.26"
+    curl -L https://github.com/ollama/ollama/releases/download/v${OLLAMA_VERSION}/ollama-linux-amd64 -o /tmp/ollama
+    sudo install -o root -g root -m 0755 /tmp/ollama /usr/local/bin/ollama
+
+    # Create systemd service
+    sudo tee /etc/systemd/system/ollama.service > /dev/null <<EOF
+[Unit]
+Description=Ollama Service
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/ollama serve
+User=root
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+    sudo systemctl daemon-reload
+    sudo systemctl enable ollama
+    sudo systemctl start ollama
+
+    # Wait for service to be ready
+    sleep 5
+fi
 
 # Pull Llama2 model
 echo "[5/5] Downloading Llama2 model (this may take a few minutes, ~4GB)..."
