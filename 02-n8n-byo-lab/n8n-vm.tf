@@ -1,6 +1,5 @@
-# Terraform configuration for Disk Space Cleanup Lab
-# Provisions Azure VM with n8n, Ollama, and Llama2
-# Lab: Intelligent Disk Space Cleanup with n8n and AI
+# Terraform configuration for Build Your Own n8n + AI Agent Lab
+# Provisions Azure VM with n8n, Ollama, and llama3.2
 
 terraform {
   required_providers {
@@ -17,8 +16,8 @@ provider "azurerm" {
 
 # Variables
 variable "resource_group_name" {
-    default     = "rg-disk-cleanup-lab"
-    description = "Resource group for disk cleanup lab VMs"
+    default     = "rg-n8n-byo-lab"
+    description = "Resource group for n8n BYO lab VMs"
 }
 
 variable "location" {
@@ -49,14 +48,14 @@ resource "azurerm_resource_group" "rg" {
 
     tags = {
         Environment = "Lab"
-        Purpose     = "Disk Cleanup Automation"
+        Purpose     = "n8n AI Agent Lab"
         Project     = "Whey-AI-Man"
     }
 }
 
 # Virtual Network
 resource "azurerm_virtual_network" "vnet" {
-    name                = "disk-cleanup-lab-vnet"
+    name                = "n8n-byo-lab-vnet"
     address_space       = ["10.0.0.0/16"]
     location            = azurerm_resource_group.rg.location
     resource_group_name = azurerm_resource_group.rg.name
@@ -185,7 +184,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     name                = "lab-vm-${count.index + 1}"
     resource_group_name = azurerm_resource_group.rg.name
     location            = azurerm_resource_group.rg.location
-    size                = "Standard_D4s_v3"  # 4 vCPU, 16GB RAM - Optimal for Ollama/Llama2
+    size                = "Standard_D4s_v3"  # 4 vCPU, 16GB RAM - Optimal for Ollama/llama3.2
     admin_username      = var.admin_username
 
     network_interface_ids = [
@@ -216,7 +215,26 @@ resource "azurerm_linux_virtual_machine" "vm" {
     tags = {
         Environment = "Lab"
         VM          = "lab-vm-${count.index + 1}"
-        Purpose     = "Disk Cleanup Lab"
+        Purpose     = "n8n AI Agent Lab"
+    }
+}
+
+# Auto-shutdown schedule (9pm daily) to prevent forgotten VMs running up costs
+resource "azurerm_dev_test_global_vm_shutdown_schedule" "auto_shutdown" {
+    count              = var.vm_count
+    virtual_machine_id = azurerm_linux_virtual_machine.vm[count.index].id
+    location           = azurerm_resource_group.rg.location
+    enabled            = true
+
+    daily_recurrence_time = "2100"
+    timezone              = "GMT Standard Time"
+
+    notification_settings {
+        enabled = false
+    }
+
+    tags = {
+        Environment = "Lab"
     }
 }
 
@@ -242,7 +260,7 @@ output "setup_instructions" {
     value = <<-EOT
 
     ╔════════════════════════════════════════════════════════════╗
-    ║  Disk Space Cleanup Lab - VMs Ready!                       ║
+    ║  n8n AI Agent Lab - VMs Ready!                             ║
     ╚════════════════════════════════════════════════════════════╝
 
     Next steps:
@@ -258,13 +276,16 @@ output "setup_instructions" {
        chmod +x setup-lab-vm.sh
        ./setup-lab-vm.sh
 
-    4. Wait ~15 minutes for Ollama model download (~4GB)
+    4. Wait ~15 minutes for Ollama model download (~2GB)
 
     5. Access n8n:
        See 'vm_info' output for n8n URLs
 
-    6. Start the lab!
-       Open lab-guide.md and begin
+    6. Start building your AI agents!
+
+    NOTE: VMs will auto-shutdown at 9pm (GMT) daily to prevent
+    unexpected costs. You can restart them from the Azure portal
+    if needed.
 
     ╔════════════════════════════════════════════════════════════╗
     ║  Cleanup when done: terraform destroy                      ║
