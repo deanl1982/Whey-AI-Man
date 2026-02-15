@@ -8,80 +8,60 @@
       "type": "@n8n/n8n-nodes-langchain.chatTrigger",
       "typeVersion": 1.3,
       "position": [
-        64,
+        0,
         0
       ],
-      "id": "7b487b78-2340-411c-b118-c59192dbe707",
+      "id": "4c80203e-c7a4-49cb-8b81-cd86ab2d98f4",
       "name": "When chat message received",
       "webhookId": "2aa3463a-24c5-42c0-9a64-653a635c2c86"
     },
     {
       "parameters": {
         "options": {
-          "systemMessage": "You are Terry, an IT Administrator for Whey-AI-Man. Your responsibility is to monitor and maintain the nginx web server running on this local system.\n\nWhen asked about the website status:\n1. Use the \"Check Website\" tool to verify the nginx web server at http://localhost/ is responding\n2. Check if the response contains the exact HTML content: <h1>Welcome to Whey-AI, Man!</h1>\n3. If the website is down, use the \"SSH Command\" tool to check nginx status and restart it if needed\n4. Report the website's status as either \"up 😎👍\" or \"down 😞👎\"\n\nUseful commands:\n- Check nginx status: sudo systemctl status nginx\n- Start nginx: sudo systemctl start nginx\n- Stop nginx: sudo systemctl stop nginx\n- Restart nginx: sudo systemctl restart nginx"
+          "systemMessage": "You are Terry, an IT Administrator for Whey-AI-Man. As a new employee, your only responsibility is to ensure the website at http://51.132.233.176 is operational. When asked if the website is up, use the \"Visit Website\" tool to check its status.\n\n1. Access the website using the provided HTTP tool.\n\n2. The website is considered up and operational only if the response contains the exact HTML content: <h1>Welcome to Whey-AI, Man!</h1>.\n\n3. Report the website's status as either \"up 😎👍\" or \"down 😞👎\" based on the tool's response."
         }
       },
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        416,
+        352,
         0
       ],
-      "id": "31babef8-e541-43da-8101-6368366aa506",
+      "id": "d8890648-3879-40a7-8827-711bcaa437cc",
       "name": "AI Agent"
-    },
-    {
-      "parameters": {
-        "model": "llama3.2",
-        "options": {
-          "baseURL": "http://localhost:11434"
-        }
-      },
-      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
-      "typeVersion": 1,
-      "position": [
-        176,
-        224
-      ],
-      "id": "41e12f49-3c97-403b-99c5-211dc899d553",
-      "name": "Ollama Chat Model"
     },
     {
       "parameters": {},
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        416,
+        352,
         224
       ],
-      "id": "6b41470a-da33-4f43-ac38-3303ff36a8b4",
+      "id": "deda546e-a9a7-4a13-9c52-264e5c1bc8a5",
       "name": "Simple Memory"
     },
     {
       "parameters": {
-        "name": "Check Website",
-        "description": "Checks if the nginx web server at http://localhost/ is responding correctly",
-        "url": "http://localhost/",
+        "url": "http://51.132.233.176",
         "options": {}
       },
-      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
-      "typeVersion": 1.1,
+      "type": "n8n-nodes-base.httpRequestTool",
+      "typeVersion": 4.2,
       "position": [
-        608,
+        544,
         224
       ],
-      "id": "128ed727-90e6-4a2d-930b-0a5d91c9e229",
-      "name": "Check Website"
+      "id": "3c280522-bde5-4b6d-a2b1-9c48c4870878",
+      "name": "HTTP Request"
     },
     {
       "parameters": {
-        "name": "SSH Command",
-        "description": "Execute SSH commands on the local system to manage nginx service. Can check status, start, stop, or restart nginx.",
         "workflowId": {
           "__rl": true,
-          "value": "yUuUUnyjyIOqSv2e",
+          "value": "hE4vj20wE48jWB5W",
           "mode": "list",
-          "cachedResultUrl": "/workflow/yUuUUnyjyIOqSv2e",
+          "cachedResultUrl": "/workflow/hE4vj20wE48jWB5W",
           "cachedResultName": "SSH-Tools"
         },
         "workflowInputs": {
@@ -111,11 +91,30 @@
       "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
       "typeVersion": 2.2,
       "position": [
-        800,
+        736,
         224
       ],
-      "id": "78a10f2b-fea9-46d0-a9ea-1f9fca0335ae",
-      "name": "SSH Command"
+      "id": "e21d17f4-e7d7-4680-a018-50d765c0c815",
+      "name": "Call 'SSH-Tools'"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOllama",
+      "typeVersion": 1,
+      "position": [
+        112,
+        240
+      ],
+      "id": "45370cd1-0f7c-47ca-ad6b-9bfea49fc08c",
+      "name": "Ollama Chat Model",
+      "credentials": {
+        "ollamaApi": {
+          "id": "9PLaZmTiXCLMmaQV",
+          "name": "Ollama account"
+        }
+      }
     }
   ],
   "pinData": {},
@@ -126,17 +125,6 @@
           {
             "node": "AI Agent",
             "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Ollama Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent",
-            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -153,7 +141,7 @@
         ]
       ]
     },
-    "Check Website": {
+    "HTTP Request": {
       "ai_tool": [
         [
           {
@@ -164,7 +152,7 @@
         ]
       ]
     },
-    "SSH Command": {
+    "Call 'SSH-Tools'": {
       "ai_tool": [
         [
           {
@@ -175,21 +163,29 @@
         ]
       ]
     },
-    "AI Agent": {
-      "main": [
-        []
+    "Ollama Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
       ]
     }
   },
   "active": false,
   "settings": {
-    "executionOrder": "v1"
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
   },
-  "versionId": "8b5e24ef-fc58-4446-a906-3e04a6af2edc",
+  "versionId": "219b5b4a-37db-48f7-bd6a-9462925e8073",
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "edda8b5b64a41691fa9adf8b831983ac75c62297853620a90fa946e592ec5f1f"
+    "instanceId": "b323d892fa1eb599772530ce3de596999ef3cb1fe6283f332934eecadab9bb97"
   },
-  "id": "hmESg9APaCSj0WHZ",
+  "id": "tKothTcL8pkklRGE",
   "tags": []
 }
