@@ -68,9 +68,6 @@ resource_group_name = "rg-n8n-lab"         # Make it unique
 # Initialize Terraform
 terraform init
 
-# Preview what will be created
-terraform plan
-
 # Deploy (takes ~5 minutes)
 terraform apply
 ```
