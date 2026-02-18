@@ -4,8 +4,12 @@
 # Resource group name (change to avoid conflicts)
 resource_group_name = "rg-disk-cleanup-lab"
 
-# Azure region
+# Azure region (preferred - used as tiebreaker when costs are equal)
 location = "uksouth"
+
+# Candidate regions to check for SKU availability and cost
+# The best region is selected automatically based on availability and price
+# candidate_regions = ["uksouth", "ukwest", "northeurope", "westeurope"]
 
 # VM admin credentials
 admin_username = "adminuser"
@@ -16,9 +20,10 @@ admin_password = "YourSecurePassword123!"  # CHANGE THIS!
 # For group lab: set to number of participants
 vm_count = 1
 
-# VM size/SKU (must be available in your chosen region)
+# VM size/SKU (must be available in at least one candidate region)
 # Default: Standard_D4s_v3 (4 vCPU, 16GB RAM) - optimal for Ollama/llama3.2
-# If your region doesn't support this SKU, check available sizes with:
-#   az vm list-skus --location <your-region> --output table --query "[?resourceType=='virtualMachines']"
+# Terraform will automatically check availability across candidate regions
+# and select the best region based on availability and cost.
+# If no candidate region has this SKU, you'll get an error with instructions.
 # Alternative sizes: "Standard_D4s_v4", "Standard_D4s_v5", "Standard_D4as_v5"
 vm_size = "Standard_D4s_v3"
