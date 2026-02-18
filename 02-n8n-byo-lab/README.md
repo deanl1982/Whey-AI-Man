@@ -59,6 +59,24 @@ vm_count = 1                                # 1 for demo, N for participants
 resource_group_name = "rg-n8n-lab"         # Make it unique
 ```
 
+**Optional - Change VM size or candidate regions:**
+
+The default VM size is `Standard_D4s_v3` (4 vCPU, 16GB RAM). During deployment, Terraform automatically checks SKU availability across multiple candidate regions and selects the **best region based on availability and cost**. Your preferred region (`location`) is used as a tiebreaker when costs are equal.
+
+You can customise this behaviour in `terraform.tfvars`:
+```hcl
+# Preferred region (used as tiebreaker when costs are equal)
+location = "uksouth"
+
+# Regions to check for availability and cost (best one is selected automatically)
+candidate_regions = ["uksouth", "ukwest", "northeurope", "westeurope"]
+
+# VM size (change if the default is not available in any candidate region)
+vm_size = "Standard_D4s_v3"
+```
+
+> **Tip:** After `terraform apply`, the output will show which region was selected and the estimated hourly cost.
+
 💾 **Save:** `Ctrl+O` then `Enter`
 ❌ **Exit:** `Ctrl+X`
 

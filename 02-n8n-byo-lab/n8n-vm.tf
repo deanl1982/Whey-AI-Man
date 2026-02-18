@@ -22,7 +22,13 @@ variable "resource_group_name" {
 
 variable "location" {
     default     = "uksouth"
-    description = "Azure region for deployment"
+    description = "Preferred Azure region for deployment (used as tiebreaker when costs are equal)"
+}
+
+variable "candidate_regions" {
+    default     = ["uksouth", "ukwest", "northeurope", "westeurope"]
+    description = "List of Azure regions to check for VM SKU availability and cost. The best region is selected automatically."
+    type        = list(string)
 }
 
 variable "admin_username" {
@@ -41,10 +47,32 @@ variable "vm_count" {
     description = "Number of VMs to create (set to number of lab participants)"
 }
 
+variable "vm_size" {
+    default     = "Standard_D4s_v3"
+    description = "VM size/SKU - 4 vCPU, 16GB RAM recommended for Ollama/llama3.2"
+}
+
+# Check VM SKU availability across candidate regions and select the best one
+# Based on availability and retail pricing, with preferred region as tiebreaker
+data "external" "sku_check" {
+    program = ["bash", "${path.module}/check-sku.sh"]
+
+    query = {
+        vm_size   = var.vm_size
+        regions   = join(",", var.candidate_regions)
+        preferred = var.location
+    }
+}
+
+locals {
+    # Use the best region from the SKU check, falling back to the preferred location
+    deploy_region = data.external.sku_check.result.available == "true" ? data.external.sku_check.result.best_region : var.location
+}
+
 # Resource Group
 resource "azurerm_resource_group" "rg" {
     name     = var.resource_group_name
-    location = var.location
+    location = local.deploy_region
 
     tags = {
         Environment = "Lab"
@@ -184,7 +212,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     name                = "lab-vm-${count.index + 1}"
     resource_group_name = azurerm_resource_group.rg.name
     location            = azurerm_resource_group.rg.location
-    size                = "Standard_D4s_v3"  # 4 vCPU, 16GB RAM - Optimal for Ollama/llama3.2
+    size                = var.vm_size  # 4 vCPU, 16GB RAM - Optimal for Ollama/llama3.2
     admin_username      = var.admin_username
 
     network_interface_ids = [
@@ -193,6 +221,14 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
     admin_password                  = var.admin_password
     disable_password_authentication = false
+
+    # Fail early if the selected VM SKU is not available in any candidate region
+    lifecycle {
+        precondition {
+            condition     = data.external.sku_check.result.available == "true"
+            error_message = "VM size '${var.vm_size}' is not available in any of the candidate regions (${join(", ", var.candidate_regions)}). Run 'az vm list-skus --location <region> --output table' to see available sizes, or set a different vm_size in terraform.tfvars."
+        }
+    }
 
     os_disk {
         name                 = "lab-vm-${count.index + 1}-osdisk"
@@ -239,6 +275,11 @@ resource "azurerm_dev_test_global_vm_shutdown_schedule" "auto_shutdown" {
 }
 
 # Outputs
+output "selected_region" {
+    description = "The region selected based on SKU availability and cost"
+    value       = "Region: ${local.deploy_region} | VM Size: ${var.vm_size} | Estimated hourly cost: $${data.external.sku_check.result.price}"
+}
+
 output "vm_info" {
     description = "VM connection information"
     value = {
