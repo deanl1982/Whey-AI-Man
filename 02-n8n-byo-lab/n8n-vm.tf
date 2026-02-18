@@ -41,6 +41,22 @@ variable "vm_count" {
     description = "Number of VMs to create (set to number of lab participants)"
 }
 
+variable "vm_size" {
+    default     = "Standard_D4s_v3"
+    description = "VM size/SKU - 4 vCPU, 16GB RAM recommended for Ollama/llama3.2"
+}
+
+# Check VM SKU availability in the selected region
+# Uses Azure CLI (available in Cloud Shell) to verify the SKU is not restricted
+data "external" "sku_check" {
+    program = ["bash", "${path.module}/check-sku.sh"]
+
+    query = {
+        location = var.location
+        vm_size  = var.vm_size
+    }
+}
+
 # Resource Group
 resource "azurerm_resource_group" "rg" {
     name     = var.resource_group_name
@@ -184,7 +200,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
     name                = "lab-vm-${count.index + 1}"
     resource_group_name = azurerm_resource_group.rg.name
     location            = azurerm_resource_group.rg.location
-    size                = "Standard_D4s_v3"  # 4 vCPU, 16GB RAM - Optimal for Ollama/llama3.2
+    size                = var.vm_size  # 4 vCPU, 16GB RAM - Optimal for Ollama/llama3.2
     admin_username      = var.admin_username
 
     network_interface_ids = [
@@ -193,6 +209,14 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
     admin_password                  = var.admin_password
     disable_password_authentication = false
+
+    # Fail early if the selected VM SKU is not available in the target region
+    lifecycle {
+        precondition {
+            condition     = data.external.sku_check.result.available == "true"
+            error_message = "VM size '${var.vm_size}' is not available in region '${var.location}'. Run 'az vm list-skus --location ${var.location} --output table' to see available sizes, or set a different vm_size in terraform.tfvars."
+        }
+    }
 
     os_disk {
         name                 = "lab-vm-${count.index + 1}-osdisk"

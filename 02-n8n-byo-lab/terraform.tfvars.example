@@ -15,3 +15,10 @@ admin_password = "YourSecurePassword123!"  # CHANGE THIS!
 # For demo/testing: set to 1
 # For group lab: set to number of participants
 vm_count = 1
+
+# VM size/SKU (must be available in your chosen region)
+# Default: Standard_D4s_v3 (4 vCPU, 16GB RAM) - optimal for Ollama/llama3.2
+# If your region doesn't support this SKU, check available sizes with:
+#   az vm list-skus --location <your-region> --output table --query "[?resourceType=='virtualMachines']"
+# Alternative sizes: "Standard_D4s_v4", "Standard_D4s_v5", "Standard_D4as_v5"
+vm_size = "Standard_D4s_v3"
