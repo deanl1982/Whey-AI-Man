@@ -18,6 +18,7 @@ Whey-AI-Man is a Lunch & Learn series that demystifies AI — from the fundament
 | 02 | [BYO AI Agent Lab](02-n8n-byo-lab/) | Hands-on lab — deploy your own n8n + Ollama AI agent |
 | 03 | [LLM 101](03-llm-101/) | Understanding Large Language Models — history, transformers, and how they learn |
 | 04 | [AI Periodic Table](04-ai-periodic-table/) | A framework for organising AI terminology into a periodic table |
+| 05 | [AI Guardrails](05-ai-guardrails/) | Governance framework for safe, compliant, and sovereign AI adoption |
 
 ---
 
@@ -52,8 +53,12 @@ Whey-AI-Man/
 │   ├── whey-ai-man-banner-middle.png      # Banner graphic
 │   └── README.md
 │
-└── 04-ai-periodic-table/                  # AI Periodic Table talk
-    ├── _AI-Periodic-Table.pptx            # Slide deck
+├── 04-ai-periodic-table/                  # AI Periodic Table talk
+│   ├── _AI-Periodic-Table.pptx            # Slide deck
+│   └── README.md
+│
+└── 05-ai-guardrails/                      # AI Guardrails and Principles
+    ├── AI-Guardrails-and-Principles.pptx  # Presentation deck
     └── README.md
 ```
 
@@ -122,6 +127,22 @@ Inspired by chemistry's periodic table, this session maps 18 AI concepts into a 
 - **Agentic Loop:** Agents ↔ Function Calling deployed in Frameworks
 
 **Includes:** Slide deck and speaker notes.
+
+---
+
+### 05 — AI Guardrails
+
+**Governance Framework for Safe, Compliant, and Sovereign AI Adoption**
+
+A set of 9 foundational principles for introducing AI and LLM-based capabilities into regulated environments. Written for architects, engineers, information governance, and security teams working on large-scale shared platforms.
+
+**Covers two deployment models:**
+- **Model-as-a-Service (MaaS)** — consuming LLMs via managed enterprise cloud APIs (e.g. Azure OpenAI)
+- **Self-Hosted** — deploying models within controlled infrastructure for sensitive or regulated data
+
+**Key principles include:** Data sovereignty, least-privilege models, RAG-first architecture, organisational boundaries, inference pipeline guardrails, and vendor-neutral AI design.
+
+**Includes:** Full governance paper and presentation deck.
 
 ## Contributing
 
