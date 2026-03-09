@@ -14,25 +14,6 @@ Chemistry had the same problem. Before Mendeleev, chemists had dozens of element
 
 This session applies the same thinking to AI.
 
-## The table
-
-|  | Reactive | Retrieval | Orchestration | Validation | Models |
-|---|---|---|---|---|---|
-| **Primitives** | Pr — Prompts | Em — Embeddings | | | Lg — LLM |
-| **Compositions** | Fc — Function Calling | Vx — Vector DB | Rg — RAG | Gr — Guardrails | Mm — Multimodal |
-| **Deployment** | Ag — Agents | Ft — Fine Tuning | Fw — Frameworks | Rt — Red Teaming | Sm — Small Models |
-| **Emerging** | Ma — Multi Agent | Sy — Synthetic Data | ??? | In — Interpretability | Th — Thinking |
-
-The gaps are intentional. You can't orchestrate one thing. You can't validate something that doesn't exist yet. And nobody's figured out the emerging orchestration paradigm — that's an undiscovered element.
-
-## Reactions
-
-The table isn't just for memorisation — it's for predicting how elements combine.
-
-**Production RAG:** Em → Vx → Rg → Pr → Lg + Gr
-
-**Agentic Loop:** Ag ↔ Fc deployed in Fw
-
 ## Files
 
 | File | Description |
