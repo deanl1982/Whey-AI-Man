@@ -44,6 +44,7 @@ echo "Custom welcome page created at http://$(hostname -I | awk '{print $1}')/"
 
 # Install n8n with AI/LangChain support
 echo "[4/6] Installing n8n container with AI support..."
+# Using pinned version for stability and compatibility with workflow templates
 sudo docker run -d \
   --name n8n \
   --restart unless-stopped \
@@ -53,7 +54,7 @@ sudo docker run -d \
   -e N8N_HOST=0.0.0.0 \
   -e N8N_PORT=5678 \
   -e N8N_PROTOCOL=http \
-  n8nio/n8n:latest
+  n8nio/n8n:1.75.0
 
 # Install Ollama
 echo "[5/6] Installing Ollama..."

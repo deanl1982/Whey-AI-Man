@@ -6,7 +6,7 @@
         "command": "={{ $json.command }}"
       },
       "type": "n8n-nodes-base.ssh",
-      "typeVersion": 1,
+      "typeVersion": 2,
       "position": [
         864,
         32
@@ -31,7 +31,7 @@
         }
       },
       "id": "a76bcdfe-4209-4796-a0dd-ef649c610386",
-      "typeVersion": 1.1,
+      "typeVersion": 1.2,
       "name": "Start",
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "position": [
