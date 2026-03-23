@@ -19,6 +19,7 @@ Whey-AI-Man is a Lunch & Learn series that demystifies AI — from the fundament
 | 03 | [LLM 101](03-llm-101/) | Understanding Large Language Models — history, transformers, and how they learn |
 | 04 | [AI Periodic Table](04-ai-periodic-table/) | A framework for organising AI terminology into a periodic table |
 | 05 | [AI Guardrails](05-ai-guardrails/) | Governance framework for safe, compliant, and sovereign AI adoption |
+| 06 | [Service Desk Agent](06-service-desk-agent/) | Build a Copilot Studio agent that analyses service desk data to identify hidden trends |
 
 ---
 
@@ -57,8 +58,15 @@ Whey-AI-Man/
 │   ├── _AI-Periodic-Table.pptx            # Slide deck
 │   └── README.md
 │
-└── 05-ai-guardrails/                      # AI Guardrails and Principles
-    ├── AI-Guardrails-and-Principles.pptx  # Presentation deck
+├── 05-ai-guardrails/                      # AI Guardrails and Principles
+│   ├── AI-Guardrails-and-Principles.pptx  # Presentation deck
+│   └── README.md
+│
+└── 06-service-desk-agent/                 # Service Desk Trend Analysis Agent
+    ├── m365_support_tickets_200.csv       # 200-ticket dataset
+    ├── m365_support_tickets_500.csv       # 500-ticket dataset
+    ├── system-prompt.txt                  # Agent system prompt
+    ├── guided-prompts.md                  # Progressive demo prompt sequence
     └── README.md
 ```
 
@@ -143,6 +151,26 @@ A set of 9 foundational principles for introducing AI and LLM-based capabilities
 **Key principles include:** Data sovereignty, least-privilege models, RAG-first architecture, organisational boundaries, inference pipeline guardrails, and vendor-neutral AI design.
 
 **Includes:** Full governance paper and presentation deck.
+
+---
+
+### 06 — Service Desk Agent
+
+**Service Desk Trend Analysis with Copilot Studio**
+
+Build a Copilot Studio agent that analyses M365 service desk data to identify trends and patterns that would typically require hours of manual investigation. The agent surfaces underlying problems hidden across hundreds of individual incident tickets.
+
+**What you'll build:** A declarative agent in Copilot Studio that ingests simulated ServiceNow incident data and identifies cross-ticket correlations humans would miss.
+
+**What the agent finds:**
+- Outlook crashes linked to a specific Windows update (KB5041585)
+- OneDrive sync failures isolated to a single network segment (VLAN-230)
+- Teams call quality degradation routed through a specific proxy (PROXY-UK-02)
+- SharePoint permission errors following a tenant migration (Project Atlas)
+
+**Demonstrates:** The value of AI in problem management — shifting from reactive incident handling to proactive trend identification.
+
+**Includes:** Two datasets (200 and 500 tickets), system prompt, guided demo prompts, and a facilitator answer key.
 
 ## Contributing
 
